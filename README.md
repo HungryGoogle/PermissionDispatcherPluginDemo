@@ -1,0 +1,2 @@
+# PermissionDispatcherPluginDemo
+PermissionDispatcher Plugin
