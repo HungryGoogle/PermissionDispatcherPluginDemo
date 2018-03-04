@@ -14,5 +14,7 @@ plugin里面存放了插件
 以申请摄像头为例：<br>
 <uses-permission android:name="android.permission.CAMERA"/>
 
-### 3、在Android Studio中添加一个测试权限
-
+### 3、添加注释代码
+#####右键-》菜单选择generate-》菜单选择 generate running permission
+![avatar](https://github.com/HungryGoogle/PermissionDispatcherPluginDemo/blob/master/app/plugin/%E6%9D%83%E9%99%90%E7%94%B3%E8%AF%B7%E6%88%AA%E5%9B%BE.png)
+### 4、添加注释代码
