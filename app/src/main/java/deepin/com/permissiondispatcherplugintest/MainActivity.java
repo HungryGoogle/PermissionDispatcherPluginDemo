@@ -44,23 +44,13 @@ public class MainActivity extends Activity {
         Toast.makeText(this,"开启摄像头权限成功", Toast.LENGTH_LONG).show();
     }
 
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        Log.i(TAG, "onRequestPermissionsResult requestCod = " + requestCode + ", grantResults = " + grantResults);
-        MainActivityPermissionsDispatcher.onRequestPermissionsResult(this, requestCode, grantResults);
-    }
-
-
     @OnPermissionDenied(Manifest.permission.CAMERA)
-    void deniedCameraPermission() {
+    void cameraPermissionDenied() {
         Log.i(TAG, "deniedCameraPermission ... ");
     }
 
     @OnNeverAskAgain(Manifest.permission.CAMERA)
-    void onCameraNeverAskAgain() {
+    void cameraPermissionNerverAskAgain() {
         Log.i(TAG, "onCameraNeverAskAgain ... ");
         new AlertDialog.Builder(this)
                 .setPositiveButton("朕亲去开启", new DialogInterface.OnClickListener() {
@@ -82,6 +72,16 @@ public class MainActivity extends Activity {
                 .setMessage("需要摄像头权限，陛下您已经设置拒接开启，并勾选了不再提醒")
                 .show();
 
+    }
+
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+
+        Log.i(TAG, "onRequestPermissionsResult requestCod = " + requestCode + ", grantResults = " + grantResults);
+        MainActivityPermissionsDispatcher.onRequestPermissionsResult(this, requestCode, grantResults);
     }
 
 
