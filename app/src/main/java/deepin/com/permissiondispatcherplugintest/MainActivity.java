@@ -83,9 +83,11 @@ public class MainActivity extends Activity {
                 .show();
 
     }
+
+
 //
 //
-//    @OnShowRationale(Manifest.permission.CAMERA)
+//    @OnShowRationale(Manifest.intent能跳转到的界面.CAMERA)
 //    void cameraShowRationale(final PermissionRequest request) {
 //        new AlertDialog.Builder(this)
 //                .setPositiveButton("恩准", new DialogInterface.OnClickListener() {
