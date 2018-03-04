@@ -5,10 +5,10 @@ PermissionDispatcher Plugin
 . 如果用户选择同意，直接使用
 . 如果用户拒接
 ### 1、在Android Studio中添加插件
-#####方式1：官网下载
+##### 方式1：官网下载
 https://plugins.jetbrains.com/plugin/8349-permissionsdispatcher-plugin
-#####方式2：离线下载
-plugin里面存放了插件
+##### 方式2：离线下载
+权限plugin（1.4.7版本）存放在本项目“app/plugin/” 目录里面了
 
 ### 2、在Android Studio中添加一个测试权限
 以申请摄像头为例：<br>
