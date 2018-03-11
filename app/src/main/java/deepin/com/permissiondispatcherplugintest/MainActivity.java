@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View view) {
                 Log.i(TAG, "call requestCameraPermission 1 ");
-                MainActivityPermissionsDispatcher.requestPermissionWithCheck(MainActivity.this);
+                MainActivityPermissionsDispatcher.requestCameraPermissionWithCheck(MainActivity.this);
                 Log.i(TAG, "call requestCameraPermission 2 ");
             }
         });
